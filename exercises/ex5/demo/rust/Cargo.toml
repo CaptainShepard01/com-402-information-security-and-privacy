@@ -1,0 +1,25 @@
+[package]
+name = "rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "spatial"
+path = "src/spatial.rs"
+
+[[bin]]
+name = "temporal"
+path = "src/temporal.rs"
+
+[[bin]]
+name = "race"
+path = "src/race.rs"
+
+[[bin]]
+name = "union"
+path = "src/union.rs"
+
+[dependencies]
+scanf = "1.2"
