@@ -1,0 +1,21 @@
+services:
+
+  client:
+    container_name: server
+    image: server
+    build:
+      context: .
+      target: server
+    ports:
+      - "127.0.0.1:80:80"
+      - "127.0.0.1:443:443"
+
+  verifier:
+    container_name: verifier
+    image: verifier
+    build:
+      context: .
+      target: verifier
+    volumes:
+      - ".:/current_dir"
+    
